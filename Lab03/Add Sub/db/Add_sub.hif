@@ -1,0 +1,229 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ff_asyncrst_sign8bit
+# storage
+db|Add_sub.(1).cnf
+db|Add_sub.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ff_asyncrst_sign8bit.vhd
+83cb3dd3ee899c1f751a783da822e82a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(d)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ff_asyncrst_sign8bit:reg01
+ff_asyncrst_sign8bit:reg02
+ff_asyncrst_sign8bit:reg03
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ff_asyncrst_sign1bit
+# storage
+db|Add_sub.(3).cnf
+db|Add_sub.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ff_asyncrst_sign1bit.vhd
+43a13ca7101e7facd4e08d2d207ac2e9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+ff_asyncrst_sign1bit:reg04
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+decoder_7seg
+# storage
+db|Add_sub.(4).cnf
+db|Add_sub.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder_7seg.vhd
+8697e9645f82b7c9e7e2b391a16b8f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(hex)
+0 to 6
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+decoder_7seg:disp7
+decoder_7seg:disp6
+decoder_7seg:disp5
+decoder_7seg:disp4
+decoder_7seg:disp1
+decoder_7seg:disp0
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Add_sub
+# storage
+db|Add_sub.(0).cnf
+db|Add_sub.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+add_sub.vhd
+9f66fe7b7a78899d457fe442b9caf183
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+full_adder_8bit
+# storage
+db|Add_sub.(2).cnf
+db|Add_sub.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+full_adder_8bit.vhd
+8a4cdd23a35345463b4e622abff7c7b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(val01)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(val02)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+full_adder_8bit:adder
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

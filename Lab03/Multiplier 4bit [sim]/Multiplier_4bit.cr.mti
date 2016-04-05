@@ -1,0 +1,127 @@
+{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/coder_7seg.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/coder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity coder_7seg
+-- Compiling architecture behavior of coder_7seg
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/clock.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/clock.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity clock
+-- Compiling architecture behavior of clock
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/clock.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/clock.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity clock
+-- Compiling architecture behavior of clock
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/decoder_7seg.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/decoder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity decoder_7seg
+-- Compiling architecture behavior of decoder_7seg
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/full_adder_4bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/full_adder_4bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder_4bit
+-- Compiling architecture behavior of full_adder_4bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/testbench.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/testbench.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/testbench.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/testbench.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/coder_7seg.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/coder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity coder_7seg
+-- Compiling architecture behavior of coder_7seg
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/data_gen.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/data_gen.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity data_gen
+-- Compiling architecture behavior of data_gen
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/Multiplier_4bit.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/Multiplier_4bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity multiplier_4bit
+-- Compiling architecture behavior of multiplier_4bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/Multiplier_4bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/Multiplier_4bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity multiplier_4bit
+-- Compiling architecture behavior of multiplier_4bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/data_gen.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/data_gen.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity data_gen
+-- Compiling architecture behavior of data_gen
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/verif.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/verif.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity verif
+-- Compiling architecture behavior of verif
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/verif.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit [tb]/verif.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity verif
+-- Compiling architecture behavior of verif
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/decoder_7seg.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/decoder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity decoder_7seg
+-- Compiling architecture behavior of decoder_7seg
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/full_adder_4bit.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Multiplier 4bit/full_adder_4bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder_4bit
+-- Compiling architecture behavior of full_adder_4bit
+
+} {} {}}

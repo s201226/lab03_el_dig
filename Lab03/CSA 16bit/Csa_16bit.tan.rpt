@@ -1,0 +1,504 @@
+Classic Timing Analyzer report for Csa_16bit
+Tue Apr 05 12:34:27 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'key[1]'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                ;
++------------------------------+-------+---------------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From                              ; To                                ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 4.866 ns                         ; sw[17]                            ; ff_asyncrst_sign16bit:reg01|Q[1]  ; --         ; key[1]   ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 9.812 ns                         ; ff_asyncrst_sign16bit:reg03|Q[10] ; output[10]                        ; key[1]     ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; 0.227 ns                         ; sw[28]                            ; ff_asyncrst_sign16bit:reg01|Q[12] ; --         ; key[1]   ; 0            ;
+; Clock Setup: 'key[1]'        ; N/A   ; None          ; 208.33 MHz ( period = 4.800 ns ) ; ff_asyncrst_sign16bit:reg01|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                                   ;                                   ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; key[1]          ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'key[1]'                                                                                                                                                                                                                                                             ;
++-----------------------------------------+-----------------------------------------------------+-----------------------------------+-----------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack                                   ; Actual fmax (period)                                ; From                              ; To                                ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-----------------------------------------+-----------------------------------------------------+-----------------------------------+-----------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A                                     ; 208.33 MHz ( period = 4.800 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.588 ns                ;
+; N/A                                     ; 209.47 MHz ( period = 4.774 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.562 ns                ;
+; N/A                                     ; 210.93 MHz ( period = 4.741 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.527 ns                ;
+; N/A                                     ; 210.93 MHz ( period = 4.741 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.527 ns                ;
+; N/A                                     ; 211.37 MHz ( period = 4.731 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.519 ns                ;
+; N/A                                     ; 212.09 MHz ( period = 4.715 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.501 ns                ;
+; N/A                                     ; 212.09 MHz ( period = 4.715 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.501 ns                ;
+; N/A                                     ; 212.27 MHz ( period = 4.711 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.499 ns                ;
+; N/A                                     ; 213.45 MHz ( period = 4.685 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.473 ns                ;
+; N/A                                     ; 214.04 MHz ( period = 4.672 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.458 ns                ;
+; N/A                                     ; 214.04 MHz ( period = 4.672 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.458 ns                ;
+; N/A                                     ; 214.96 MHz ( period = 4.652 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.438 ns                ;
+; N/A                                     ; 214.96 MHz ( period = 4.652 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.438 ns                ;
+; N/A                                     ; 216.08 MHz ( period = 4.628 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.416 ns                ;
+; N/A                                     ; 216.17 MHz ( period = 4.626 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.412 ns                ;
+; N/A                                     ; 216.17 MHz ( period = 4.626 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.412 ns                ;
+; N/A                                     ; 218.87 MHz ( period = 4.569 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.355 ns                ;
+; N/A                                     ; 218.87 MHz ( period = 4.569 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.355 ns                ;
+; N/A                                     ; 220.07 MHz ( period = 4.544 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.332 ns                ;
+; N/A                                     ; 222.97 MHz ( period = 4.485 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.271 ns                ;
+; N/A                                     ; 222.97 MHz ( period = 4.485 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.271 ns                ;
+; N/A                                     ; 225.53 MHz ( period = 4.434 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.222 ns                ;
+; N/A                                     ; 227.38 MHz ( period = 4.398 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.186 ns                ;
+; N/A                                     ; 228.31 MHz ( period = 4.380 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.167 ns                ;
+; N/A                                     ; 228.57 MHz ( period = 4.375 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.161 ns                ;
+; N/A                                     ; 228.57 MHz ( period = 4.375 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.161 ns                ;
+; N/A                                     ; 230.47 MHz ( period = 4.339 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.125 ns                ;
+; N/A                                     ; 230.47 MHz ( period = 4.339 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.125 ns                ;
+; N/A                                     ; 231.43 MHz ( period = 4.321 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.106 ns                ;
+; N/A                                     ; 231.43 MHz ( period = 4.321 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.106 ns                ;
+; N/A                                     ; 232.23 MHz ( period = 4.306 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.092 ns                ;
+; N/A                                     ; 234.36 MHz ( period = 4.267 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.055 ns                ;
+; N/A                                     ; 234.41 MHz ( period = 4.266 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.054 ns                ;
+; N/A                                     ; 235.35 MHz ( period = 4.249 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.035 ns                ;
+; N/A                                     ; 235.85 MHz ( period = 4.240 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.028 ns                ;
+; N/A                                     ; 236.74 MHz ( period = 4.224 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 4.012 ns                ;
+; N/A                                     ; 237.64 MHz ( period = 4.208 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.994 ns                ;
+; N/A                                     ; 237.64 MHz ( period = 4.208 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.994 ns                ;
+; N/A                                     ; 238.27 MHz ( period = 4.197 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.985 ns                ;
+; N/A                                     ; 239.41 MHz ( period = 4.177 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[10] ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.965 ns                ;
+; N/A                                     ; 240.10 MHz ( period = 4.165 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.952 ns                ;
+; N/A                                     ; 240.10 MHz ( period = 4.165 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.951 ns                ;
+; N/A                                     ; 240.10 MHz ( period = 4.165 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.951 ns                ;
+; N/A                                     ; 240.91 MHz ( period = 4.151 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.939 ns                ;
+; N/A                                     ; 241.31 MHz ( period = 4.144 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.930 ns                ;
+; N/A                                     ; 241.95 MHz ( period = 4.133 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.921 ns                ;
+; N/A                                     ; 241.95 MHz ( period = 4.133 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.920 ns                ;
+; N/A                                     ; 243.19 MHz ( period = 4.112 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.898 ns                ;
+; N/A                                     ; 243.55 MHz ( period = 4.106 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.891 ns                ;
+; N/A                                     ; 243.55 MHz ( period = 4.106 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.891 ns                ;
+; N/A                                     ; 244.26 MHz ( period = 4.094 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.882 ns                ;
+; N/A                                     ; 245.46 MHz ( period = 4.074 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.860 ns                ;
+; N/A                                     ; 245.46 MHz ( period = 4.074 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.859 ns                ;
+; N/A                                     ; 245.46 MHz ( period = 4.074 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.860 ns                ;
+; N/A                                     ; 245.46 MHz ( period = 4.074 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.859 ns                ;
+; N/A                                     ; 249.38 MHz ( period = 4.010 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.798 ns                ;
+; N/A                                     ; 250.75 MHz ( period = 3.988 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.775 ns                ;
+; N/A                                     ; 250.94 MHz ( period = 3.985 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.772 ns                ;
+; N/A                                     ; 254.52 MHz ( period = 3.929 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.714 ns                ;
+; N/A                                     ; 254.52 MHz ( period = 3.929 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.714 ns                ;
+; N/A                                     ; 254.71 MHz ( period = 3.926 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.711 ns                ;
+; N/A                                     ; 254.71 MHz ( period = 3.926 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.711 ns                ;
+; N/A                                     ; 255.23 MHz ( period = 3.918 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.706 ns                ;
+; N/A                                     ; 255.30 MHz ( period = 3.917 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.703 ns                ;
+; N/A                                     ; 255.36 MHz ( period = 3.916 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.702 ns                ;
+; N/A                                     ; 255.43 MHz ( period = 3.915 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.701 ns                ;
+; N/A                                     ; 256.41 MHz ( period = 3.900 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.688 ns                ;
+; N/A                                     ; 258.80 MHz ( period = 3.864 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.652 ns                ;
+; N/A                                     ; 259.07 MHz ( period = 3.860 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.646 ns                ;
+; N/A                                     ; 259.13 MHz ( period = 3.859 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.645 ns                ;
+; N/A                                     ; 259.13 MHz ( period = 3.859 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.645 ns                ;
+; N/A                                     ; 259.13 MHz ( period = 3.859 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.645 ns                ;
+; N/A                                     ; 259.20 MHz ( period = 3.858 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.644 ns                ;
+; N/A                                     ; 259.34 MHz ( period = 3.856 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.643 ns                ;
+; N/A                                     ; 260.01 MHz ( period = 3.846 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.633 ns                ;
+; N/A                                     ; 260.48 MHz ( period = 3.839 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.624 ns                ;
+; N/A                                     ; 261.99 MHz ( period = 3.817 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.602 ns                ;
+; N/A                                     ; 263.37 MHz ( period = 3.797 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.582 ns                ;
+; N/A                                     ; 263.37 MHz ( period = 3.797 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.582 ns                ;
+; N/A                                     ; 264.20 MHz ( period = 3.785 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.571 ns                ;
+; N/A                                     ; 264.20 MHz ( period = 3.785 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.570 ns                ;
+; N/A                                     ; 266.31 MHz ( period = 3.755 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.541 ns                ;
+; N/A                                     ; 266.38 MHz ( period = 3.754 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.540 ns                ;
+; N/A                                     ; 266.45 MHz ( period = 3.753 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.539 ns                ;
+; N/A                                     ; 267.88 MHz ( period = 3.733 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.521 ns                ;
+; N/A                                     ; 268.60 MHz ( period = 3.723 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.509 ns                ;
+; N/A                                     ; 268.67 MHz ( period = 3.722 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.508 ns                ;
+; N/A                                     ; 268.74 MHz ( period = 3.721 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.507 ns                ;
+; N/A                                     ; 269.98 MHz ( period = 3.704 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.492 ns                ;
+; N/A                                     ; 271.00 MHz ( period = 3.690 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.478 ns                ;
+; N/A                                     ; 271.52 MHz ( period = 3.683 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.469 ns                ;
+; N/A                                     ; 273.45 MHz ( period = 3.657 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.444 ns                ;
+; N/A                                     ; 274.35 MHz ( period = 3.645 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.431 ns                ;
+; N/A                                     ; 274.35 MHz ( period = 3.645 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.431 ns                ;
+; N/A                                     ; 274.73 MHz ( period = 3.640 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.425 ns                ;
+; N/A                                     ; 274.95 MHz ( period = 3.637 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.422 ns                ;
+; N/A                                     ; 275.86 MHz ( period = 3.625 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.413 ns                ;
+; N/A                                     ; 275.86 MHz ( period = 3.625 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.412 ns                ;
+; N/A                                     ; 278.86 MHz ( period = 3.586 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.373 ns                ;
+; N/A                                     ; 283.53 MHz ( period = 3.527 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.312 ns                ;
+; N/A                                     ; 283.53 MHz ( period = 3.527 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.312 ns                ;
+; N/A                                     ; 285.06 MHz ( period = 3.508 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.293 ns                ;
+; N/A                                     ; 287.36 MHz ( period = 3.480 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.267 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.264 ns                ;
+; N/A                                     ; 289.86 MHz ( period = 3.450 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.235 ns                ;
+; N/A                                     ; 289.94 MHz ( period = 3.449 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.234 ns                ;
+; N/A                                     ; 290.02 MHz ( period = 3.448 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.233 ns                ;
+; N/A                                     ; 290.87 MHz ( period = 3.438 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 3.224 ns                ;
+; N/A                                     ; 291.72 MHz ( period = 3.428 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.213 ns                ;
+; N/A                                     ; 291.80 MHz ( period = 3.427 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.212 ns                ;
+; N/A                                     ; 291.89 MHz ( period = 3.426 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.211 ns                ;
+; N/A                                     ; 293.60 MHz ( period = 3.406 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 3.193 ns                ;
+; N/A                                     ; 293.60 MHz ( period = 3.406 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 3.192 ns                ;
+; N/A                                     ; 294.46 MHz ( period = 3.396 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.182 ns                ;
+; N/A                                     ; 294.46 MHz ( period = 3.396 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.181 ns                ;
+; N/A                                     ; 294.55 MHz ( period = 3.395 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.183 ns                ;
+; N/A                                     ; 294.55 MHz ( period = 3.395 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.181 ns                ;
+; N/A                                     ; 294.55 MHz ( period = 3.395 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.180 ns                ;
+; N/A                                     ; 294.64 MHz ( period = 3.394 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.180 ns                ;
+; N/A                                     ; 294.64 MHz ( period = 3.394 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.179 ns                ;
+; N/A                                     ; 295.51 MHz ( period = 3.384 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.172 ns                ;
+; N/A                                     ; 298.69 MHz ( period = 3.348 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.135 ns                ;
+; N/A                                     ; 299.76 MHz ( period = 3.336 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.122 ns                ;
+; N/A                                     ; 299.76 MHz ( period = 3.336 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.122 ns                ;
+; N/A                                     ; 303.58 MHz ( period = 3.294 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.080 ns                ;
+; N/A                                     ; 303.67 MHz ( period = 3.293 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.079 ns                ;
+; N/A                                     ; 303.77 MHz ( period = 3.292 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.078 ns                ;
+; N/A                                     ; 304.32 MHz ( period = 3.286 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.074 ns                ;
+; N/A                                     ; 306.65 MHz ( period = 3.261 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 3.047 ns                ;
+; N/A                                     ; 306.94 MHz ( period = 3.258 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 3.044 ns                ;
+; N/A                                     ; 307.60 MHz ( period = 3.251 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.036 ns                ;
+; N/A                                     ; 307.69 MHz ( period = 3.250 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.035 ns                ;
+; N/A                                     ; 307.79 MHz ( period = 3.249 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.034 ns                ;
+; N/A                                     ; 307.88 MHz ( period = 3.248 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.033 ns                ;
+; N/A                                     ; 307.98 MHz ( period = 3.247 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.032 ns                ;
+; N/A                                     ; 308.07 MHz ( period = 3.246 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.031 ns                ;
+; N/A                                     ; 308.83 MHz ( period = 3.238 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.023 ns                ;
+; N/A                                     ; 309.21 MHz ( period = 3.234 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 3.021 ns                ;
+; N/A                                     ; 309.89 MHz ( period = 3.227 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.013 ns                ;
+; N/A                                     ; 309.89 MHz ( period = 3.227 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 3.013 ns                ;
+; N/A                                     ; 314.76 MHz ( period = 3.177 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.964 ns                ;
+; N/A                                     ; 315.46 MHz ( period = 3.170 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.958 ns                ;
+; N/A                                     ; 316.16 MHz ( period = 3.163 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.949 ns                ;
+; N/A                                     ; 319.59 MHz ( period = 3.129 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.915 ns                ;
+; N/A                                     ; 320.62 MHz ( period = 3.119 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.904 ns                ;
+; N/A                                     ; 320.72 MHz ( period = 3.118 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.903 ns                ;
+; N/A                                     ; 320.82 MHz ( period = 3.117 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.902 ns                ;
+; N/A                                     ; 324.89 MHz ( period = 3.078 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.865 ns                ;
+; N/A                                     ; 325.41 MHz ( period = 3.073 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.859 ns                ;
+; N/A                                     ; 327.65 MHz ( period = 3.052 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[9]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.838 ns                ;
+; N/A                                     ; 328.08 MHz ( period = 3.048 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[10] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.834 ns                ;
+; N/A                                     ; 328.19 MHz ( period = 3.047 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[8]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.833 ns                ;
+; N/A                                     ; 328.95 MHz ( period = 3.040 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[4]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.827 ns                ;
+; N/A                                     ; 331.13 MHz ( period = 3.020 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[9]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.807 ns                ;
+; N/A                                     ; 331.13 MHz ( period = 3.020 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[9]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.806 ns                ;
+; N/A                                     ; 331.56 MHz ( period = 3.016 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[10] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.803 ns                ;
+; N/A                                     ; 331.56 MHz ( period = 3.016 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[10] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.802 ns                ;
+; N/A                                     ; 331.67 MHz ( period = 3.015 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[8]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.802 ns                ;
+; N/A                                     ; 331.67 MHz ( period = 3.015 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[8]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.801 ns                ;
+; N/A                                     ; 331.90 MHz ( period = 3.013 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.800 ns                ;
+; N/A                                     ; 341.30 MHz ( period = 2.930 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[15] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.716 ns                ;
+; N/A                                     ; 342.11 MHz ( period = 2.923 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[0]  ; ff_asyncrst_sign1bit:reg04|Q      ; key[1]     ; key[1]   ; None                        ; None                      ; 2.709 ns                ;
+; N/A                                     ; 344.59 MHz ( period = 2.902 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[12] ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.686 ns                ;
+; N/A                                     ; 344.59 MHz ( period = 2.902 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[12] ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.686 ns                ;
+; N/A                                     ; 345.07 MHz ( period = 2.898 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[15] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.684 ns                ;
+; N/A                                     ; 345.90 MHz ( period = 2.891 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[1]  ; ff_asyncrst_sign1bit:reg04|Q      ; key[1]     ; key[1]   ; None                        ; None                      ; 2.677 ns                ;
+; N/A                                     ; 347.83 MHz ( period = 2.875 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[9]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.661 ns                ;
+; N/A                                     ; 348.19 MHz ( period = 2.872 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[9]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.658 ns                ;
+; N/A                                     ; 348.31 MHz ( period = 2.871 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[10] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.657 ns                ;
+; N/A                                     ; 348.43 MHz ( period = 2.870 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[8]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.656 ns                ;
+; N/A                                     ; 348.68 MHz ( period = 2.868 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[10] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.654 ns                ;
+; N/A                                     ; 348.80 MHz ( period = 2.867 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[2]  ; ff_asyncrst_sign16bit:reg03|Q[8]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.653 ns                ;
+; N/A                                     ; 349.53 MHz ( period = 2.861 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.649 ns                ;
+; N/A                                     ; 349.77 MHz ( period = 2.859 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.645 ns                ;
+; N/A                                     ; 351.00 MHz ( period = 2.849 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.634 ns                ;
+; N/A                                     ; 351.12 MHz ( period = 2.848 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.633 ns                ;
+; N/A                                     ; 351.25 MHz ( period = 2.847 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.632 ns                ;
+; N/A                                     ; 355.62 MHz ( period = 2.812 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.599 ns                ;
+; N/A                                     ; 357.78 MHz ( period = 2.795 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[11] ; ff_asyncrst_sign16bit:reg03|Q[0]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.583 ns                ;
+; N/A                                     ; 360.49 MHz ( period = 2.774 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.560 ns                ;
+; N/A                                     ; 360.62 MHz ( period = 2.773 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.559 ns                ;
+; N/A                                     ; 360.75 MHz ( period = 2.772 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.558 ns                ;
+; N/A                                     ; 362.19 MHz ( period = 2.761 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.547 ns                ;
+; N/A                                     ; 363.24 MHz ( period = 2.753 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign16bit:reg03|Q[15] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.539 ns                ;
+; N/A                                     ; 364.17 MHz ( period = 2.746 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[8]  ; ff_asyncrst_sign16bit:reg03|Q[7]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.532 ns                ;
+; N/A                                     ; 364.17 MHz ( period = 2.746 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[1]  ; ff_asyncrst_sign1bit:reg04|Q      ; key[1]     ; key[1]   ; None                        ; None                      ; 2.532 ns                ;
+; N/A                                     ; 364.56 MHz ( period = 2.743 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[9]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.529 ns                ;
+; N/A                                     ; 365.10 MHz ( period = 2.739 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[10] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.525 ns                ;
+; N/A                                     ; 365.23 MHz ( period = 2.738 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[8]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.524 ns                ;
+; N/A                                     ; 369.00 MHz ( period = 2.710 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[1]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.498 ns                ;
+; N/A                                     ; 369.28 MHz ( period = 2.708 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[6]  ; ff_asyncrst_sign16bit:reg03|Q[11] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.494 ns                ;
+; N/A                                     ; 372.58 MHz ( period = 2.684 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[6]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.470 ns                ;
+; N/A                                     ; 372.72 MHz ( period = 2.683 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[4]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.469 ns                ;
+; N/A                                     ; 372.86 MHz ( period = 2.682 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[7]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.468 ns                ;
+; N/A                                     ; 377.22 MHz ( period = 2.651 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[2]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.437 ns                ;
+; N/A                                     ; 377.22 MHz ( period = 2.651 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[3]  ; ff_asyncrst_sign16bit:reg03|Q[3]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.437 ns                ;
+; N/A                                     ; 378.79 MHz ( period = 2.640 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[9]  ; ff_asyncrst_sign16bit:reg03|Q[5]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.426 ns                ;
+; N/A                                     ; 381.53 MHz ( period = 2.621 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign16bit:reg03|Q[15] ; key[1]     ; key[1]   ; None                        ; None                      ; 2.407 ns                ;
+; N/A                                     ; 382.56 MHz ( period = 2.614 ns )                    ; ff_asyncrst_sign16bit:reg02|Q[0]  ; ff_asyncrst_sign1bit:reg04|Q      ; key[1]     ; key[1]   ; None                        ; None                      ; 2.400 ns                ;
+; N/A                                     ; 389.11 MHz ( period = 2.570 ns )                    ; ff_asyncrst_sign16bit:reg01|Q[5]  ; ff_asyncrst_sign16bit:reg03|Q[9]  ; key[1]     ; key[1]   ; None                        ; None                      ; 2.357 ns                ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                                   ;                                   ;            ;          ;                             ;                           ;                         ;
++-----------------------------------------+-----------------------------------------------------+-----------------------------------+-----------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; tsu                                                                                       ;
++-------+--------------+------------+--------+-----------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From   ; To                                ; To Clock ;
++-------+--------------+------------+--------+-----------------------------------+----------+
+; N/A   ; None         ; 4.866 ns   ; sw[17] ; ff_asyncrst_sign16bit:reg01|Q[1]  ; key[1]   ;
+; N/A   ; None         ; 4.425 ns   ; sw[25] ; ff_asyncrst_sign16bit:reg01|Q[9]  ; key[1]   ;
+; N/A   ; None         ; 4.404 ns   ; sw[14] ; ff_asyncrst_sign16bit:reg02|Q[14] ; key[1]   ;
+; N/A   ; None         ; 4.357 ns   ; sw[8]  ; ff_asyncrst_sign16bit:reg02|Q[8]  ; key[1]   ;
+; N/A   ; None         ; 4.351 ns   ; sw[10] ; ff_asyncrst_sign16bit:reg02|Q[10] ; key[1]   ;
+; N/A   ; None         ; 4.322 ns   ; sw[11] ; ff_asyncrst_sign16bit:reg02|Q[11] ; key[1]   ;
+; N/A   ; None         ; 4.315 ns   ; sw[5]  ; ff_asyncrst_sign16bit:reg02|Q[5]  ; key[1]   ;
+; N/A   ; None         ; 4.207 ns   ; sw[20] ; ff_asyncrst_sign16bit:reg01|Q[4]  ; key[1]   ;
+; N/A   ; None         ; 4.140 ns   ; sw[1]  ; ff_asyncrst_sign16bit:reg02|Q[1]  ; key[1]   ;
+; N/A   ; None         ; 4.096 ns   ; sw[23] ; ff_asyncrst_sign16bit:reg01|Q[7]  ; key[1]   ;
+; N/A   ; None         ; 4.092 ns   ; sw[29] ; ff_asyncrst_sign16bit:reg01|Q[13] ; key[1]   ;
+; N/A   ; None         ; 4.006 ns   ; sw[24] ; ff_asyncrst_sign16bit:reg01|Q[8]  ; key[1]   ;
+; N/A   ; None         ; 3.970 ns   ; sw[30] ; ff_asyncrst_sign16bit:reg01|Q[14] ; key[1]   ;
+; N/A   ; None         ; 3.795 ns   ; sw[9]  ; ff_asyncrst_sign16bit:reg02|Q[9]  ; key[1]   ;
+; N/A   ; None         ; 3.790 ns   ; sw[26] ; ff_asyncrst_sign16bit:reg01|Q[10] ; key[1]   ;
+; N/A   ; None         ; 3.769 ns   ; sw[0]  ; ff_asyncrst_sign16bit:reg02|Q[0]  ; key[1]   ;
+; N/A   ; None         ; 3.759 ns   ; sw[4]  ; ff_asyncrst_sign16bit:reg02|Q[4]  ; key[1]   ;
+; N/A   ; None         ; 3.649 ns   ; sw[2]  ; ff_asyncrst_sign16bit:reg02|Q[2]  ; key[1]   ;
+; N/A   ; None         ; 3.626 ns   ; sw[27] ; ff_asyncrst_sign16bit:reg01|Q[11] ; key[1]   ;
+; N/A   ; None         ; 3.543 ns   ; sw[3]  ; ff_asyncrst_sign16bit:reg02|Q[3]  ; key[1]   ;
+; N/A   ; None         ; 3.540 ns   ; sw[7]  ; ff_asyncrst_sign16bit:reg02|Q[7]  ; key[1]   ;
+; N/A   ; None         ; 3.534 ns   ; sw[31] ; ff_asyncrst_sign16bit:reg01|Q[15] ; key[1]   ;
+; N/A   ; None         ; 3.531 ns   ; sw[6]  ; ff_asyncrst_sign16bit:reg02|Q[6]  ; key[1]   ;
+; N/A   ; None         ; 3.386 ns   ; sw[16] ; ff_asyncrst_sign16bit:reg01|Q[0]  ; key[1]   ;
+; N/A   ; None         ; 3.321 ns   ; sw[18] ; ff_asyncrst_sign16bit:reg01|Q[2]  ; key[1]   ;
+; N/A   ; None         ; 3.300 ns   ; sw[22] ; ff_asyncrst_sign16bit:reg01|Q[6]  ; key[1]   ;
+; N/A   ; None         ; 3.298 ns   ; sw[21] ; ff_asyncrst_sign16bit:reg01|Q[5]  ; key[1]   ;
+; N/A   ; None         ; 3.198 ns   ; sw[13] ; ff_asyncrst_sign16bit:reg02|Q[13] ; key[1]   ;
+; N/A   ; None         ; 3.183 ns   ; sw[19] ; ff_asyncrst_sign16bit:reg01|Q[3]  ; key[1]   ;
+; N/A   ; None         ; 3.175 ns   ; sw[15] ; ff_asyncrst_sign16bit:reg02|Q[15] ; key[1]   ;
+; N/A   ; None         ; 0.165 ns   ; sw[12] ; ff_asyncrst_sign16bit:reg02|Q[12] ; key[1]   ;
+; N/A   ; None         ; 0.003 ns   ; sw[28] ; ff_asyncrst_sign16bit:reg01|Q[12] ; key[1]   ;
++-------+--------------+------------+--------+-----------------------------------+----------+
+
+
++-------------------------------------------------------------------------------------------------+
+; tco                                                                                             ;
++-------+--------------+------------+-----------------------------------+------------+------------+
+; Slack ; Required tco ; Actual tco ; From                              ; To         ; From Clock ;
++-------+--------------+------------+-----------------------------------+------------+------------+
+; N/A   ; None         ; 9.812 ns   ; ff_asyncrst_sign16bit:reg03|Q[10] ; output[10] ; key[1]     ;
+; N/A   ; None         ; 9.477 ns   ; ff_asyncrst_sign16bit:reg03|Q[15] ; output[15] ; key[1]     ;
+; N/A   ; None         ; 9.154 ns   ; ff_asyncrst_sign16bit:reg03|Q[11] ; output[11] ; key[1]     ;
+; N/A   ; None         ; 8.802 ns   ; ff_asyncrst_sign16bit:reg03|Q[0]  ; output[0]  ; key[1]     ;
+; N/A   ; None         ; 7.557 ns   ; ff_asyncrst_sign16bit:reg03|Q[3]  ; output[3]  ; key[1]     ;
+; N/A   ; None         ; 7.354 ns   ; ff_asyncrst_sign16bit:reg03|Q[6]  ; output[6]  ; key[1]     ;
+; N/A   ; None         ; 7.348 ns   ; ff_asyncrst_sign16bit:reg03|Q[2]  ; output[2]  ; key[1]     ;
+; N/A   ; None         ; 7.068 ns   ; ff_asyncrst_sign16bit:reg03|Q[12] ; output[12] ; key[1]     ;
+; N/A   ; None         ; 7.056 ns   ; ff_asyncrst_sign16bit:reg03|Q[4]  ; output[4]  ; key[1]     ;
+; N/A   ; None         ; 6.957 ns   ; ff_asyncrst_sign16bit:reg03|Q[7]  ; output[7]  ; key[1]     ;
+; N/A   ; None         ; 6.858 ns   ; ff_asyncrst_sign16bit:reg03|Q[1]  ; output[1]  ; key[1]     ;
+; N/A   ; None         ; 6.854 ns   ; ff_asyncrst_sign16bit:reg03|Q[9]  ; output[9]  ; key[1]     ;
+; N/A   ; None         ; 6.741 ns   ; ff_asyncrst_sign16bit:reg03|Q[5]  ; output[5]  ; key[1]     ;
+; N/A   ; None         ; 6.641 ns   ; ff_asyncrst_sign16bit:reg03|Q[8]  ; output[8]  ; key[1]     ;
+; N/A   ; None         ; 6.602 ns   ; ff_asyncrst_sign1bit:reg04|Q      ; carry      ; key[1]     ;
+; N/A   ; None         ; 6.598 ns   ; ff_asyncrst_sign16bit:reg03|Q[14] ; output[14] ; key[1]     ;
+; N/A   ; None         ; 6.406 ns   ; ff_asyncrst_sign16bit:reg03|Q[13] ; output[13] ; key[1]     ;
++-------+--------------+------------+-----------------------------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; th                                                                                              ;
++---------------+-------------+-----------+--------+-----------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From   ; To                                ; To Clock ;
++---------------+-------------+-----------+--------+-----------------------------------+----------+
+; N/A           ; None        ; 0.227 ns  ; sw[28] ; ff_asyncrst_sign16bit:reg01|Q[12] ; key[1]   ;
+; N/A           ; None        ; 0.065 ns  ; sw[12] ; ff_asyncrst_sign16bit:reg02|Q[12] ; key[1]   ;
+; N/A           ; None        ; -2.945 ns ; sw[15] ; ff_asyncrst_sign16bit:reg02|Q[15] ; key[1]   ;
+; N/A           ; None        ; -2.953 ns ; sw[19] ; ff_asyncrst_sign16bit:reg01|Q[3]  ; key[1]   ;
+; N/A           ; None        ; -2.968 ns ; sw[13] ; ff_asyncrst_sign16bit:reg02|Q[13] ; key[1]   ;
+; N/A           ; None        ; -3.068 ns ; sw[21] ; ff_asyncrst_sign16bit:reg01|Q[5]  ; key[1]   ;
+; N/A           ; None        ; -3.070 ns ; sw[22] ; ff_asyncrst_sign16bit:reg01|Q[6]  ; key[1]   ;
+; N/A           ; None        ; -3.091 ns ; sw[18] ; ff_asyncrst_sign16bit:reg01|Q[2]  ; key[1]   ;
+; N/A           ; None        ; -3.156 ns ; sw[16] ; ff_asyncrst_sign16bit:reg01|Q[0]  ; key[1]   ;
+; N/A           ; None        ; -3.301 ns ; sw[6]  ; ff_asyncrst_sign16bit:reg02|Q[6]  ; key[1]   ;
+; N/A           ; None        ; -3.304 ns ; sw[31] ; ff_asyncrst_sign16bit:reg01|Q[15] ; key[1]   ;
+; N/A           ; None        ; -3.310 ns ; sw[7]  ; ff_asyncrst_sign16bit:reg02|Q[7]  ; key[1]   ;
+; N/A           ; None        ; -3.313 ns ; sw[3]  ; ff_asyncrst_sign16bit:reg02|Q[3]  ; key[1]   ;
+; N/A           ; None        ; -3.396 ns ; sw[27] ; ff_asyncrst_sign16bit:reg01|Q[11] ; key[1]   ;
+; N/A           ; None        ; -3.419 ns ; sw[2]  ; ff_asyncrst_sign16bit:reg02|Q[2]  ; key[1]   ;
+; N/A           ; None        ; -3.529 ns ; sw[4]  ; ff_asyncrst_sign16bit:reg02|Q[4]  ; key[1]   ;
+; N/A           ; None        ; -3.539 ns ; sw[0]  ; ff_asyncrst_sign16bit:reg02|Q[0]  ; key[1]   ;
+; N/A           ; None        ; -3.560 ns ; sw[26] ; ff_asyncrst_sign16bit:reg01|Q[10] ; key[1]   ;
+; N/A           ; None        ; -3.565 ns ; sw[9]  ; ff_asyncrst_sign16bit:reg02|Q[9]  ; key[1]   ;
+; N/A           ; None        ; -3.740 ns ; sw[30] ; ff_asyncrst_sign16bit:reg01|Q[14] ; key[1]   ;
+; N/A           ; None        ; -3.776 ns ; sw[24] ; ff_asyncrst_sign16bit:reg01|Q[8]  ; key[1]   ;
+; N/A           ; None        ; -3.862 ns ; sw[29] ; ff_asyncrst_sign16bit:reg01|Q[13] ; key[1]   ;
+; N/A           ; None        ; -3.866 ns ; sw[23] ; ff_asyncrst_sign16bit:reg01|Q[7]  ; key[1]   ;
+; N/A           ; None        ; -3.910 ns ; sw[1]  ; ff_asyncrst_sign16bit:reg02|Q[1]  ; key[1]   ;
+; N/A           ; None        ; -3.977 ns ; sw[20] ; ff_asyncrst_sign16bit:reg01|Q[4]  ; key[1]   ;
+; N/A           ; None        ; -4.085 ns ; sw[5]  ; ff_asyncrst_sign16bit:reg02|Q[5]  ; key[1]   ;
+; N/A           ; None        ; -4.092 ns ; sw[11] ; ff_asyncrst_sign16bit:reg02|Q[11] ; key[1]   ;
+; N/A           ; None        ; -4.121 ns ; sw[10] ; ff_asyncrst_sign16bit:reg02|Q[10] ; key[1]   ;
+; N/A           ; None        ; -4.127 ns ; sw[8]  ; ff_asyncrst_sign16bit:reg02|Q[8]  ; key[1]   ;
+; N/A           ; None        ; -4.174 ns ; sw[14] ; ff_asyncrst_sign16bit:reg02|Q[14] ; key[1]   ;
+; N/A           ; None        ; -4.195 ns ; sw[25] ; ff_asyncrst_sign16bit:reg01|Q[9]  ; key[1]   ;
+; N/A           ; None        ; -4.636 ns ; sw[17] ; ff_asyncrst_sign16bit:reg01|Q[1]  ; key[1]   ;
++---------------+-------------+-----------+--------+-----------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Apr 05 12:34:26 2016
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Csa_16bit -c Csa_16bit --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "key[1]" is an undefined clock
+Info: Clock "key[1]" has Internal fmax of 208.33 MHz between source register "ff_asyncrst_sign16bit:reg01|Q[10]" and destination register "ff_asyncrst_sign16bit:reg03|Q[1]" (period= 4.8 ns)
+    Info: + Longest register to register delay is 4.588 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X44_Y33_N1; Fanout = 4; REG Node = 'ff_asyncrst_sign16bit:reg01|Q[10]'
+        Info: 2: + IC(0.543 ns) + CELL(0.413 ns) = 0.956 ns; Loc. = LCCOMB_X44_Y33_N4; Fanout = 3; COMB Node = 'full_adder_16bit:adder|full_adder_4bit:add31|carry[3]~0'
+        Info: 3: + IC(0.461 ns) + CELL(0.420 ns) = 1.837 ns; Loc. = LCCOMB_X44_Y33_N16; Fanout = 1; COMB Node = 'full_adder_16bit:adder|full_adder_4bit:add30|carry_o~0'
+        Info: 4: + IC(0.679 ns) + CELL(0.438 ns) = 2.954 ns; Loc. = LCCOMB_X45_Y33_N28; Fanout = 3; COMB Node = 'full_adder_16bit:adder|c_add3~1'
+        Info: 5: + IC(0.737 ns) + CELL(0.420 ns) = 4.111 ns; Loc. = LCCOMB_X44_Y34_N12; Fanout = 1; COMB Node = 'full_adder_16bit:adder|sum[1]~1'
+        Info: 6: + IC(0.243 ns) + CELL(0.150 ns) = 4.504 ns; Loc. = LCCOMB_X44_Y34_N10; Fanout = 1; COMB Node = 'full_adder_16bit:adder|sum[1]~2'
+        Info: 7: + IC(0.000 ns) + CELL(0.084 ns) = 4.588 ns; Loc. = LCFF_X44_Y34_N11; Fanout = 1; REG Node = 'ff_asyncrst_sign16bit:reg03|Q[1]'
+        Info: Total cell delay = 1.925 ns ( 41.96 % )
+        Info: Total interconnect delay = 2.663 ns ( 58.04 % )
+    Info: - Smallest clock skew is 0.002 ns
+        Info: + Shortest clock path from clock "key[1]" to destination register is 2.682 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'key[1]'
+            Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 49; COMB Node = 'key[1]~clkctrl'
+            Info: 3: + IC(1.028 ns) + CELL(0.537 ns) = 2.682 ns; Loc. = LCFF_X44_Y34_N11; Fanout = 1; REG Node = 'ff_asyncrst_sign16bit:reg03|Q[1]'
+            Info: Total cell delay = 1.536 ns ( 57.27 % )
+            Info: Total interconnect delay = 1.146 ns ( 42.73 % )
+        Info: - Longest clock path from clock "key[1]" to source register is 2.680 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'key[1]'
+            Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 49; COMB Node = 'key[1]~clkctrl'
+            Info: 3: + IC(1.026 ns) + CELL(0.537 ns) = 2.680 ns; Loc. = LCFF_X44_Y33_N1; Fanout = 4; REG Node = 'ff_asyncrst_sign16bit:reg01|Q[10]'
+            Info: Total cell delay = 1.536 ns ( 57.31 % )
+            Info: Total interconnect delay = 1.144 ns ( 42.69 % )
+    Info: + Micro clock to output delay of source is 0.250 ns
+    Info: + Micro setup delay of destination is -0.036 ns
+Info: tsu for register "ff_asyncrst_sign16bit:reg01|Q[1]" (data pin = "sw[17]", clock pin = "key[1]") is 4.866 ns
+    Info: + Longest pin to register delay is 7.583 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.842 ns) = 0.842 ns; Loc. = PIN_U10; Fanout = 1; PIN Node = 'sw[17]'
+        Info: 2: + IC(6.508 ns) + CELL(0.149 ns) = 7.499 ns; Loc. = LCCOMB_X46_Y33_N8; Fanout = 1; COMB Node = 'ff_asyncrst_sign16bit:reg01|Q[1]~feeder'
+        Info: 3: + IC(0.000 ns) + CELL(0.084 ns) = 7.583 ns; Loc. = LCFF_X46_Y33_N9; Fanout = 2; REG Node = 'ff_asyncrst_sign16bit:reg01|Q[1]'
+        Info: Total cell delay = 1.075 ns ( 14.18 % )
+        Info: Total interconnect delay = 6.508 ns ( 85.82 % )
+    Info: + Micro setup delay of destination is -0.036 ns
+    Info: - Shortest clock path from clock "key[1]" to destination register is 2.681 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'key[1]'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 49; COMB Node = 'key[1]~clkctrl'
+        Info: 3: + IC(1.027 ns) + CELL(0.537 ns) = 2.681 ns; Loc. = LCFF_X46_Y33_N9; Fanout = 2; REG Node = 'ff_asyncrst_sign16bit:reg01|Q[1]'
+        Info: Total cell delay = 1.536 ns ( 57.29 % )
+        Info: Total interconnect delay = 1.145 ns ( 42.71 % )
+Info: tco from clock "key[1]" to destination pin "output[10]" through register "ff_asyncrst_sign16bit:reg03|Q[10]" is 9.812 ns
+    Info: + Longest clock path from clock "key[1]" to source register is 2.681 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'key[1]'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 49; COMB Node = 'key[1]~clkctrl'
+        Info: 3: + IC(1.027 ns) + CELL(0.537 ns) = 2.681 ns; Loc. = LCFF_X47_Y33_N21; Fanout = 1; REG Node = 'ff_asyncrst_sign16bit:reg03|Q[10]'
+        Info: Total cell delay = 1.536 ns ( 57.29 % )
+        Info: Total interconnect delay = 1.145 ns ( 42.71 % )
+    Info: + Micro clock to output delay of source is 0.250 ns
+    Info: + Longest register to pin delay is 6.881 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X47_Y33_N21; Fanout = 1; REG Node = 'ff_asyncrst_sign16bit:reg03|Q[10]'
+        Info: 2: + IC(4.073 ns) + CELL(2.808 ns) = 6.881 ns; Loc. = PIN_AE22; Fanout = 0; PIN Node = 'output[10]'
+        Info: Total cell delay = 2.808 ns ( 40.81 % )
+        Info: Total interconnect delay = 4.073 ns ( 59.19 % )
+Info: th for register "ff_asyncrst_sign16bit:reg01|Q[12]" (data pin = "sw[28]", clock pin = "key[1]") is 0.227 ns
+    Info: + Longest clock path from clock "key[1]" to destination register is 2.682 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'key[1]'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 49; COMB Node = 'key[1]~clkctrl'
+        Info: 3: + IC(1.028 ns) + CELL(0.537 ns) = 2.682 ns; Loc. = LCFF_X44_Y34_N13; Fanout = 3; REG Node = 'ff_asyncrst_sign16bit:reg01|Q[12]'
+        Info: Total cell delay = 1.536 ns ( 57.27 % )
+        Info: Total interconnect delay = 1.146 ns ( 42.73 % )
+    Info: + Micro hold delay of destination is 0.266 ns
+    Info: - Shortest pin to register delay is 2.721 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.979 ns) = 0.979 ns; Loc. = PIN_C13; Fanout = 1; PIN Node = 'sw[28]'
+        Info: 2: + IC(1.376 ns) + CELL(0.366 ns) = 2.721 ns; Loc. = LCFF_X44_Y34_N13; Fanout = 3; REG Node = 'ff_asyncrst_sign16bit:reg01|Q[12]'
+        Info: Total cell delay = 1.345 ns ( 49.43 % )
+        Info: Total interconnect delay = 1.376 ns ( 50.57 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 205 megabytes
+    Info: Processing ended: Tue Apr 05 12:34:27 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

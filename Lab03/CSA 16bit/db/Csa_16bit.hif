@@ -1,0 +1,234 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Csa_16bit
+# storage
+db|Csa_16bit.(0).cnf
+db|Csa_16bit.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csa_16bit.vhd
+1488013ec9c1baf561a64995acabe7f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ff_asyncrst_sign16bit
+# storage
+db|Csa_16bit.(1).cnf
+db|Csa_16bit.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ff_asyncrst_sign16bit.vhd
+a1d53dca1f42b44cd3f29da985c3c54
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(d)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ff_asyncrst_sign16bit:reg01
+ff_asyncrst_sign16bit:reg02
+ff_asyncrst_sign16bit:reg03
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+full_adder_16bit
+# storage
+db|Csa_16bit.(2).cnf
+db|Csa_16bit.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+full_adder_16bit.vhd
+4439e1caa1a0753b79bfe6a36fc4ac4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(val01)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(val02)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+full_adder_16bit:adder
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+full_adder_4bit
+# storage
+db|Csa_16bit.(3).cnf
+db|Csa_16bit.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+full_adder_4bit.vhd
+83fad4b27a14e45172e263fdbe38e928
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(val01)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(val02)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+full_adder_16bit:adder|full_adder_4bit:add1
+full_adder_16bit:adder|full_adder_4bit:add20
+full_adder_16bit:adder|full_adder_4bit:add21
+full_adder_16bit:adder|full_adder_4bit:add30
+full_adder_16bit:adder|full_adder_4bit:add31
+full_adder_16bit:adder|full_adder_4bit:add40
+full_adder_16bit:adder|full_adder_4bit:add41
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ff_asyncrst_sign1bit
+# storage
+db|Csa_16bit.(4).cnf
+db|Csa_16bit.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ff_asyncrst_sign1bit.vhd
+43a13ca7101e7facd4e08d2d207ac2e9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+ff_asyncrst_sign1bit:reg04
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

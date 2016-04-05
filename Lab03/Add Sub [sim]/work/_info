@@ -1,0 +1,292 @@
+m255
+K3
+13
+cModel Technology
+dD:\Documenti\Politecnico\Laboratori\Eln Sist Dig\Lab03\Full Adder [sim]
+Eadd_sub
+Z0 w1459844319
+Z1 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z3 dD:\Documenti\Politecnico\Laboratori\Eln Sist Dig\Lab03\Add_sub [sim]
+Z4 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/Add_sub.vhd
+Z5 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/Add_sub.vhd
+l0
+L5
+VgmaPEMCibUjlX[_gYcKbo1
+Z6 OV;C;6.5b;42
+32
+Z7 o-work work -2002 -explicit -O0
+Z8 tExplicit 1
+!s100 d@M<<6L82;SaQFG<XhPH^0
+Abehavior
+R1
+R2
+DEx4 work 7 add_sub 0 22 gmaPEMCibUjlX[_gYcKbo1
+l48
+L14
+V2C[^`fPTQ^6WnMO::MJeW3
+R6
+32
+Z9 Mx2 4 ieee 14 std_logic_1164
+Z10 Mx1 4 ieee 11 numeric_std
+R7
+R8
+!s100 3g_FB:G`947WNJTb]jCK93
+Eclock
+Z11 w1459841638
+R2
+R3
+Z12 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/clock.vhd
+Z13 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/clock.vhd
+l0
+L4
+V5LWHM?CLK=dI__imiIb031
+R6
+32
+R7
+R8
+!s100 DEbH?ITE:U2<S>z[UGL9I3
+Abehavior
+R2
+DEx4 work 5 clock 0 22 5LWHM?CLK=dI__imiIb031
+l10
+L9
+VWlXPk1WmHofBhn19U>nzG1
+R6
+32
+Z14 Mx1 4 ieee 14 std_logic_1164
+R7
+R8
+!s100 C<aQ8f7d58[EPoYC^ZUCI2
+Ecoder_7seg
+Z15 w1459838176
+R1
+R2
+R3
+Z16 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/coder_7seg.vhd
+Z17 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/coder_7seg.vhd
+l0
+L5
+VjFJZn5?S_Im]i_2i>Qz6?0
+R6
+32
+R7
+R8
+!s100 10f9z?cHa4REAFjQU5TdE0
+Abehavior
+R1
+R2
+DEx4 work 10 coder_7seg 0 22 jFJZn5?S_Im]i_2i>Qz6?0
+l12
+L11
+ViWG:EQ<S2ck5b:Y8H8NV80
+R6
+32
+R9
+R10
+R7
+R8
+!s100 h^LndLFCRX7j6_8n?GE?21
+Edata_gen
+Z18 w1459841524
+R1
+R2
+R3
+Z19 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/data_gen.vhd
+Z20 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/data_gen.vhd
+l0
+L5
+VPSnWl9:HF=Qi<KCeNWFB?2
+R6
+32
+R7
+R8
+!s100 R3S0LfKQn`Plc^6k[fKPS2
+Abehavior
+R1
+R2
+DEx4 work 8 data_gen 0 22 PSnWl9:HF=Qi<KCeNWFB?2
+l21
+L13
+VbKQkFnBMS3LCz1UKCdljM2
+R6
+32
+R9
+R10
+R7
+R8
+!s100 bcz7FaoU6S;WWKNmY:mC[3
+Edecoder_7seg
+Z21 w1459806688
+R1
+R2
+R3
+Z22 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/decoder_7seg.vhd
+Z23 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/decoder_7seg.vhd
+l0
+L5
+V]oC>D;5Y<IN;O]L=o3R_l0
+R6
+32
+R7
+R8
+!s100 Z5mc0lU6UC@BTW7=4=]cV3
+Abehavior
+R1
+R2
+DEx4 work 12 decoder_7seg 0 22 ]oC>D;5Y<IN;O]L=o3R_l0
+l12
+L11
+VRdeYWPW^Lme^6S?kYO2hQ1
+R6
+32
+R9
+R10
+R7
+R8
+!s100 W^7e3^=F4BD;8i>K46;eI0
+Eff_asyncrst_sign1bit
+Z24 w1459806888
+R1
+R2
+R3
+Z25 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/ff_asyncrst_sign1bit.vhd
+Z26 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/ff_asyncrst_sign1bit.vhd
+l0
+L6
+Vi<S^gKCZCS>LEA^J9UhVW3
+R6
+32
+R7
+R8
+!s100 GdNEWH^QW4AlUN`8?EHlC1
+Abehavior
+R1
+R2
+DEx4 work 20 ff_asyncrst_sign1bit 0 22 i<S^gKCZCS>LEA^J9UhVW3
+l13
+L12
+Va4M0eO:9Bhl@F4llo@ABF2
+R6
+32
+R9
+R10
+R7
+R8
+!s100 DQCC@IN;<PN=D]kFzh[U`2
+Eff_asyncrst_sign8bit
+Z27 w1459806685
+R1
+R2
+R3
+Z28 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/ff_asyncrst_sign8bit.vhd
+Z29 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/ff_asyncrst_sign8bit.vhd
+l0
+L6
+VHgk:@g^9IU>=3Zc3=KaVR0
+R6
+32
+R7
+R8
+!s100 llA0IXRIdFSoGS[dRif3@2
+Abehavior
+R1
+R2
+DEx4 work 20 ff_asyncrst_sign8bit 0 22 Hgk:@g^9IU>=3Zc3=KaVR0
+l14
+L13
+V?ZAN90DUY>KE^`[^<iXKc2
+R6
+32
+R9
+R10
+R7
+R8
+!s100 ``<BSNLkkLQo`@N>`cE_b2
+Efull_adder_8bit
+Z30 w1459844120
+R1
+R2
+R3
+Z31 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/full_adder_8bit.vhd
+Z32 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_Sub/full_adder_8bit.vhd
+l0
+L5
+VOJ8;AVXOT?8F:cb5EbILo0
+R6
+32
+R7
+R8
+!s100 AXLOz<6HmHczB>9:8h7NA0
+Abehavior
+R1
+R2
+DEx4 work 15 full_adder_8bit 0 22 OJ8;AVXOT?8F:cb5EbILo0
+l14
+L13
+VYXACi4jC1?UT;P4N8Bg3O0
+!s100 1507LHK9Y`gW]Zd`jRa3>2
+R6
+32
+R9
+R10
+R7
+R8
+Etestbench
+Z33 w1459845555
+R1
+R2
+R3
+Z34 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/testbench.vhd
+Z35 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/testbench.vhd
+l0
+L5
+VOmh88:`DRF6MS__FQB4mE3
+!s100 m_G3;SoWgfDT6O]WN@gG=2
+R6
+32
+R7
+R8
+Atest
+R1
+R2
+Z36 DEx4 work 9 testbench 0 22 Omh88:`DRF6MS__FQB4mE3
+l74
+L9
+V:LzemT;=:F6nVDJhSzk4A0
+!s100 <`PkzTn713Aj]C=zmQVI13
+R6
+32
+R9
+R10
+R7
+R8
+Everif
+Z37 w1459844663
+R1
+R2
+R3
+Z38 8D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/verif.vhd
+Z39 FD:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Add_sub [tb]/verif.vhd
+l0
+L5
+VJWk4Pf6@78gR=[PY?0JNL3
+R6
+32
+R7
+R8
+!s100 :DEX33fMH9Ca?G_5J[20I2
+Abehavior
+R1
+R2
+DEx4 work 5 verif 0 22 JWk4Pf6@78gR=[PY?0JNL3
+l13
+L12
+VC6=Poa0z89AH=Aka2f2SZ2
+R6
+32
+R9
+R10
+R7
+R8
+!s100 @@0baVW;P]PfnzJ15Q4[>0

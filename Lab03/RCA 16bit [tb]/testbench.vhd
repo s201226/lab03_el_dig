@@ -1,0 +1,113 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity testbench is
+end testbench;
+
+
+architecture test of testbench is
+
+--testbench part
+
+component clock is
+	port(clk:out std_logic);
+end component;
+
+component data_gen is
+	port(clk:in std_logic;
+		data:out std_logic_vector(31 downto 0);
+		data_s01,data_s02:out signed(15 downto 0);
+		resetn:out std_logic);
+end component;
+
+component verif is
+	port(or_num01,or_num02,output:in signed(15 downto 0);
+		carry:in std_logic;
+		error:out std_logic);
+end component;
+
+--register (per i ritardi)
+
+component ff_asyncrst_sign16bit is
+	port(D:in signed(15 downto 0);
+		Clk,Resetn:in std_logic;
+		Q:buffer signed(15 downto 0));
+end component;
+
+--unit under test
+
+component Rca_16bit is
+	port(sw:in std_logic_vector(31 downto 0);
+		key:in std_logic_vector(1 downto 0);
+		output:out std_logic_vector(15 downto 0);
+		carry:out std_logic);
+end component;
+
+
+
+signal clk,resetn,error:std_logic;
+signal to_uut:std_logic_vector(31 downto 0);
+signal g_val01,g_val02:signed(15 downto 0); --generated values
+signal to_key:std_logic_vector(1 downto 0);
+
+signal reg1reg20,reg1reg21,n_val01,n_val02:signed(15 downto 0); --collegamento registri
+
+signal output:std_logic_vector(15 downto 0);
+signal carry:std_logic;
+
+begin
+	clk_gen:clock port map(clk);
+	
+	--generazione input e output
+	
+	input:data_gen port map
+		(clk=>clk,
+		data=>to_uut,
+		data_s01=>g_val01,
+		data_s02=>g_val02,
+		resetn=>resetn);
+	
+	to_key<=clk&resetn;
+	
+	uut:Rca_16bit port map
+		(sw=>to_uut,
+		key=>to_key,
+		output=>output,
+		carry=>carry);
+	
+	--verifica
+	
+	verification:verif port map
+		(or_num01=>n_val01,
+		or_num02=>n_val02,
+		output=>signed(output),
+		carry=>carry,
+		error=>error);
+	
+	--gestione ritardi
+	
+	reg10:ff_asyncrst_sign16bit port map  --registro 1 del primo valore
+		(D=>g_val01,
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>reg1reg20);
+		
+	reg11:ff_asyncrst_sign16bit port map  --registro 1 del secondo valore
+		(D=>g_val02,
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>reg1reg21);
+		
+	reg20:ff_asyncrst_sign16bit port map  --registro 2 del primo valore
+		(D=>reg1reg20,
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>n_val01);
+		
+	reg21:ff_asyncrst_sign16bit port map
+		(D=>reg1reg21,
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>n_val02);
+end test;

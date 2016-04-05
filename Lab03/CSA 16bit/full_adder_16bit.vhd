@@ -1,0 +1,89 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity full_adder_16bit is
+	port(val01,val02:in signed(15 downto 0);
+		sum:out signed(15 downto 0));
+end full_adder_16bit;
+
+
+architecture behavior of full_adder_16bit is
+
+component full_adder_4bit is
+	port(val01,val02:in signed(3 downto 0);
+		carry_i:in std_logic;
+		sum:out signed(3 downto 0);
+		carry_o:out std_logic);
+end component;
+
+signal c_add1,c_add20,c_add21,c_add30,c_add31,c_add40,c_add41,c_add2,c_add3:std_logic;
+signal sum20,sum21,sum30,sum31,sum40,sum41,def1,def2,def3,def4:signed(3 downto 0);
+
+begin
+	add1:full_adder_4bit port map
+		(val01=>val01(3 downto 0),
+		val02=>val02(3 downto 0),
+		carry_i=>'0',
+		sum=>def1,
+		carry_o=>c_add1);
+		
+	add20:full_adder_4bit port map
+		(val01=>val01(7 downto 4),
+		val02=>val02(7 downto 4),
+		carry_i=>'0',
+		sum=>sum20,
+		carry_o=>c_add20);
+		
+	add21:full_adder_4bit port map
+		(val01=>val01(7 downto 4),
+		val02=>val02(7 downto 4),
+		carry_i=>'1',
+		sum=>sum21,
+		carry_o=>c_add21);
+		
+	def2<=sum20 when c_add1='0' else
+		sum21 when c_add1='1';
+		
+	c_add2<=c_add20 when c_add1='0' else
+		c_add21 when c_add1='1';
+		
+	add30:full_adder_4bit port map
+		(val01=>val01(11 downto 8),
+		val02=>val02(11 downto 8),
+		carry_i=>'0',
+		sum=>sum30,
+		carry_o=>c_add30);
+		
+	add31:full_adder_4bit port map
+		(val01=>val01(11 downto 8),
+		val02=>val02(11 downto 8),
+		carry_i=>'1',
+		sum=>sum31,
+		carry_o=>c_add31);
+		
+	def3<=sum30 when c_add2='0' else
+		sum31 when c_add2='1';
+		
+	c_add3<=c_add30 when c_add2='0' else
+		c_add31 when c_add2='1';
+		
+	add40:full_adder_4bit port map
+		(val01=>val01(15 downto 12),
+		val02=>val02(15 downto 12),
+		carry_i=>'0',
+		sum=>sum40,
+		carry_o=>c_add40);
+		
+	add41:full_adder_4bit port map
+		(val01=>val01(15 downto 12),
+		val02=>val02(15 downto 12),
+		carry_i=>'1',
+		sum=>sum41,
+		carry_o=>c_add41);
+		
+	def4<=sum40 when c_add3='0' else
+		sum41 when c_add3='1';
+		
+	sum<=def1&def2&def3&def4;
+end behavior;

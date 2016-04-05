@@ -1,0 +1,73 @@
+{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/data_gen.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/data_gen.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity data_gen
+-- Compiling architecture behavior of data_gen
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/ff_asyncrst_sign1bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/ff_asyncrst_sign1bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity ff_asyncrst_sign1bit
+-- Compiling architecture behavior of ff_asyncrst_sign1bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/verif.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/verif.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity verif
+-- Compiling architecture behavior of verif
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/testbench.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/testbench.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/clock.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit [tb]/clock.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity clock
+-- Compiling architecture behavior of clock
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/full_adder_16bit.vhd} {2 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/full_adder_16bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder_16bit
+** Warning: [4] D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/full_adder_16bit.vhd(7): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Compiling architecture behavior of full_adder_16bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/Cba_16bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/Cba_16bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity cba_16bit
+-- Compiling architecture behavior of cba_16bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/full_adder_4bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/full_adder_4bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder_4bit
+-- Compiling architecture behavior of full_adder_4bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/ff_asyncrst_sign16bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/CBA 16bit/ff_asyncrst_sign16bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity ff_asyncrst_sign16bit
+-- Compiling architecture behavior of ff_asyncrst_sign16bit
+
+} {} {}}

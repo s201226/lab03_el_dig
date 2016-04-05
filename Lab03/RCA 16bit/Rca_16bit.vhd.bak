@@ -1,0 +1,84 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Rca_16bit is
+	port(sw:in std_logic_vector(33 downto 0);
+		key:in std_logic_vector(1 downto 0);
+		output:out std_logic_vector(15 downto 0);
+		carry:out std_logic);
+end Rca_16bit;
+
+
+architecture behavior of Rca_16bit is
+
+--flip flop (16 e 1 bit)
+
+component ff_asyncrst_sign16bit is
+	port(D:in signed(15 downto 0);
+		Clk,Resetn:in std_logic;
+		Q:buffer signed(15 downto 0));
+end component;
+
+component ff_asyncrst_sign1bit is
+	port(D,Clk,Resetn:in std_logic;
+		Q:buffer std_logic);
+end component;
+
+--sommatore
+
+component full_adder_16bit is
+	port(val01,val02:in signed(15 downto 0);
+		sum:out signed(15 downto 0));
+end component;
+
+signal resetn,clk,to_reg04:std_logic;
+signal val01,val02,to_reg03,to_output:signed(15 downto 0);
+
+begin
+	--acquisizione ingresso
+	
+	resetn<=key(0);
+	clk<=key(1);
+	
+	reg01:ff_asyncrst_sign16bit port map
+		(D=>signed(sw(33 downto 16)),
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>val01);
+	
+	reg02:ff_asyncrst_sign16bit port map
+		(D=>signed(sw(15 downto 0)),
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>val02);
+	
+	--somma
+	
+	adder:full_adder_16bit port map
+		(val01=>val01,
+		val02=>val02,
+		sum=>to_reg03);
+		
+	--acquisizione uscita
+		
+	reg03:ff_asyncrst_sign16bit port map
+		(D=>to_reg03,
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>to_output);
+	
+	to_reg04<=(not val01(15)and not val02(15)and to_reg03(15))or(val01(15)and val02(15)and not to_reg03(15));
+	
+	reg04:ff_asyncrst_sign1bit port map
+		(D=>to_reg04,
+		Clk=>clk,
+		Resetn=>resetn,
+		Q=>carry);
+	
+	--output
+	
+	output<=std_logic_vector(to_output);
+	
+end behavior;
+		

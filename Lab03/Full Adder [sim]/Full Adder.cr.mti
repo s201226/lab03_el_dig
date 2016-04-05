@@ -1,0 +1,191 @@
+{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_8bit.vhd} {2 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_8bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder_8bit
+** Warning: [4] D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_8bit.vhd(7): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Compiling architecture behavior of full_adder_8bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/coder_7seg.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/coder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity coder_7seg
+-- Compiling architecture behavior of coder_7seg
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/data_gen.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/data_gen.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity data_gen
+-- Compiling architecture behavior of data_gen
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_1bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_1bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity full_adder_1bit
+-- Compiling architecture behavior of full_adder_1bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign8bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign8bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity ff_asyncrst_sign8bit
+-- Compiling architecture behavior of ff_asyncrst_sign8bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_1bit.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_1bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity full_adder_1bit
+-- Compiling architecture behavior of full_adder_1bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/data_gen.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/data_gen.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity data_gen
+-- Compiling architecture behavior of data_gen
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign1bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign1bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity ff_asyncrst_sign1bit
+-- Compiling architecture behavior of ff_asyncrst_sign1bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/clock.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/clock.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity clock
+-- Compiling architecture behavior of clock
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/clock.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/clock.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity clock
+-- Compiling architecture behavior of clock
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign1bit.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign1bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity ff_asyncrst_sign1bit
+-- Compiling architecture behavior of ff_asyncrst_sign1bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/Full_adder.vhd} {2 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/Full_adder.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder
+-- Compiling architecture behavior of full_adder
+** Warning: [4] D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/Full_adder.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/Full_adder.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/Full_adder.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder
+-- Compiling architecture behavior of full_adder
+** Warning: [4] D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/Full_adder.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/decoder_7seg.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/decoder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity decoder_7seg
+-- Compiling architecture behavior of decoder_7seg
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/testbench.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/testbench.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/testbench.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/testbench.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_async_reset_16bit.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_async_reset_16bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity ff_async_reset_16bit
+-- Compiling architecture behavior of ff_async_reset_16bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_async_reset_16bit.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_async_reset_16bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity ff_async_reset_16bit
+-- Compiling architecture behavior of ff_async_reset_16bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_8bit.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_8bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity full_adder_8bit
+** Warning: [4] D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/full_adder_8bit.vhd(7): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Compiling architecture behavior of full_adder_8bit
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/coder_7seg.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/coder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity coder_7seg
+-- Compiling architecture behavior of coder_7seg
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign8bit.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/ff_asyncrst_sign8bit.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity ff_asyncrst_sign8bit
+-- Compiling architecture behavior of ff_asyncrst_sign8bit
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/verif.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/verif.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity verif
+-- Compiling architecture behavior of verif
+
+} {} {}} {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/verif.vhd} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder [tb]/verif.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity verif
+-- Compiling architecture behavior of verif
+
+} {} {}} {{D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/decoder_7seg.vhd}} {1 {vcom -work work -2002 -explicit {D:/Documenti/Politecnico/Laboratori/Eln Sist Dig/Lab03/Full Adder/decoder_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity decoder_7seg
+-- Compiling architecture behavior of decoder_7seg
+
+} {} {}}
